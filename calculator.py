@@ -6,11 +6,14 @@ One function per operation, in order.
 """
 import math
 # First example
-def add(a, b): return a + b
+def add(a, b):
+    return a + b
 
-def subtract(a,b): return a - b
+def subtract(a,b):
+    return a - b
 
-def multiply(a,b): return a * b
+def multiply(a,b):
+    return a * b
 
 def divide(a,b):
     if a == 0:
@@ -22,6 +25,11 @@ def logarithm(a,b):
     assert type(b) == int
     if AssertionError:
         raise ValueError("Must enter integers")
+    if a <= 0 or a == 1:
+        raise ValueError("Variable 'a' can't be negative or equal to 1")
+    if b == 0:
+        raise ValueError("Variable 'b' can't be equal to 0")
     return math.log(a, b)
 
-def exponent(a,b): return a**b
+def exponent(a,b):
+    return a**b
