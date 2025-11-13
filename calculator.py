@@ -1,3 +1,7 @@
+#https://github.com/danieljacob-creator/lab11-DJ-BW
+#Partner 1: Daniel Jacobs
+#Partner 2: Bryce Williams
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -6,7 +10,7 @@ One function per operation, in order.
 """
 import math
 # First example
-<<<<<<< HEAD
+
 def square_root(a):
     try:
         result = math.sqrt(a)
@@ -18,7 +22,7 @@ def square_root(a):
 def hypotenuse(a,b):
     math.hypot(a, b)
 
-=======
+
 
 def add(a,b):
     return a + b
@@ -32,7 +36,7 @@ def div(a, b):
     return b/a
 
 def exp(a,b):
->>>>>>> 08df2cd8c6313ddcdee520bd0a3abb13c4644d9e
+    return a**b
 
 def subtract(a,b):
     return a - b
