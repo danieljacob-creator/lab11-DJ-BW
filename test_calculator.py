@@ -1,3 +1,9 @@
+#https://github.com/danieljacob-creator/lab11-DJ-BW
+#Partner 1: Daniel Jacobs
+#Partner 2: Bryce Williams
+
+
+
 import unittest
 from calculator import *
 
