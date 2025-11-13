@@ -12,17 +12,12 @@ import math
 # First example
 
 def square_root(a):
-    try:
-        result = math.sqrt(a)
-        assert a >= 0
-    except ValueError:
-        print("Variable 'a' must be positive")
-    return result
+    if a < 0:
+        raise ValueError("Variable 'a' must be positive")
+    return math.sqrt(a)
 
 def hypotenuse(a,b):
-    math.hypot(a, b)
-
-
+    return math.hypot(a, b)
 
 def add(a,b):
     return a + b
@@ -42,12 +37,13 @@ def subtract(a,b):
     return a - b
 
 def logarithm(a,b):
-    assert type(a) == int
-    assert type(b) == int
-    if AssertionError:
+    if type(a) != int and type(a) != float:
+        raise ValueError("Must enter Integers")
+    if type(b) != int and type(b) != float:
         raise ValueError("Must enter integers")
+
     if a <= 0 or a == 1:
         raise ValueError("Variable 'a' can't be negative or equal to 1")
     if b == 0:
         raise ValueError("Variable 'b' can't be equal to 0")
-    return math.log(a, b)
+    return math.log(b,a)
